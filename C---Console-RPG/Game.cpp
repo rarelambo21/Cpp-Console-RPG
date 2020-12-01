@@ -1,6 +1,5 @@
 #include "Game.h"
 
-
 Game::Game() {
     choice = 0;
     playing = true;

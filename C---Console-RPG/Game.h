@@ -1,9 +1,9 @@
 #pragma once
+#include "Character.h"
+#include "Functions.h"
 #include <ctime>
 #include <iomanip>
 #include <iostream>
-#include <string>
-#include "Functions.h"
 
 using namespace std;
 
