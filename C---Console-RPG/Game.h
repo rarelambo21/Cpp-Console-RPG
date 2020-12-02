@@ -2,8 +2,7 @@
 #include "Character.h"
 #include "Functions.h"
 #include <ctime>
-#include <iomanip>
-#include <iostream>
+
 
 using namespace std;
 
@@ -16,8 +15,8 @@ public:
     // Operators 
 
     // Functions
+    void initGame();
     void mainMenu();
-    void endGame();
 
     // Accessors
     inline bool getPlaying() const { return this->playing; }
@@ -28,4 +27,7 @@ private:
     // Variables
     int choice;
     bool playing;
+
+    // Character Related
+    Character character;
 };
