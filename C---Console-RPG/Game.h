@@ -2,6 +2,8 @@
 #include "Character.h"
 #include "Functions.h"
 #include <ctime>
+#include <vector>
+#include <fstream>
 
 
 using namespace std;
@@ -17,6 +19,9 @@ public:
     // Functions
     void initGame();
     void mainMenu();
+    void createNewCharacter();
+    void saveCharacter();
+    void loadCharacter();
 
     // Accessors
     inline bool getPlaying() const { return this->playing; }
@@ -29,5 +34,7 @@ private:
     bool playing;
 
     // Character Related
-    Character character;
+    int activeCharacter;
+    vector<Character> characters;
+    string fileName;
 };
