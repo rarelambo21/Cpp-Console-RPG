@@ -23,27 +23,21 @@ void Inventory::addItem(const Item& item)
 		expand();
 	}
 
-	this->itemArr[this->numOfItems++] = new Item(item);
+	this->itemArr[this->numOfItems++] = item.clone();
 }
 
 void Inventory::removeItem(int index)
 {
 }
 
-void Inventory::expand()
-{
+void Inventory::expand(){
 	this->capacity *= 2;
 
 	Item** tempArr = new Item * [this->capacity];
 
 	for (size_t i = 0; i < this->numOfItems; i++)
 	{
-		tempArr[i] = new Item(*this->itemArr[i]);
-	}
-
-	for (size_t i = 0; i < this->numOfItems; i++)
-	{
-		delete this->itemArr[i];
+		tempArr[i] = this->itemArr[i];
 	}
 
 	delete[] this->itemArr;

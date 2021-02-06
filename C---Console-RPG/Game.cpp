@@ -14,6 +14,8 @@ Game::~Game() {
 
 void Game::initGame(){
     createNewCharacter();
+    //Armor a1(2, 5, "thornnail", 1, 100, 100, 1);
+    //cout << a1.toString() << endl;
 }
 
 // Functions 

@@ -11,13 +11,6 @@ int main() {
 
     Inventory inv;
 
-    inv.addItem(Item());
-    inv.addItem(Item());
-    inv.addItem(Item());
-    inv.addItem(Item());
-    inv.addItem(Item());
-
-
     while (game.getPlaying()) {
         game.mainMenu();
     }
