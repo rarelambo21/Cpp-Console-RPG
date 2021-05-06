@@ -13,9 +13,21 @@ Game::~Game() {
 }
 
 void Game::initGame(){
+    Inventory inv;
+
+    inv.addItem(Weapon(0, 0, "wep1")); 
+    inv.addItem(Weapon(0, 0, "wep2"));
+    inv.addItem(Weapon(0, 0, "wep3"));
+    inv.addItem(Weapon(0, 0, "arm1"));
+    inv.addItem(Weapon(0, 0, "arm2"));
+    inv.addItem(Weapon(0, 0, "arm3"));
+
+    for (size_t i = 0; i < inv.size(); i++)
+    {
+        cout << inv[i].debugPrint() << endl;
+    }
+
     createNewCharacter();
-    //Armor a1(2, 5, "thornnail", 1, 100, 100, 1);
-    //cout << a1.toString() << endl;
 }
 
 // Functions 

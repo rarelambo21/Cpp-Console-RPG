@@ -46,7 +46,10 @@ private:
 
 	Inventory inventory;
 	Weapon weapon;
-	Armor armor;
+	Armor armorHead;
+	Armor armorChest;
+	Armor armorArms;
+	Armor armorLegs;
 
 	string name;
 	int level;
